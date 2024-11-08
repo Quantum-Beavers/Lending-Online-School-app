@@ -23,6 +23,13 @@ body {
   background: url(images/background.png) repeat;
 }
 
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: var(--color-text);
+}
+
 @media screen and (max-width: 1030px) {
   section {
     margin: 2rem auto;
@@ -139,6 +146,20 @@ nav .items.socials a {
     translate: -100vw;
     opacity: 0;
   }
+}
+
+/* mentors */ 
+.mentor {
+  color: var(--color-text-nav);
+}
+
+.mentor .items{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.mentor a{
+  color: var(--color-text);
 }
 
 /* footer */
