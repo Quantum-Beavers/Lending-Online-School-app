@@ -104,4 +104,6 @@ footer span{
 .copyright{
   align-self: self-end;
 }
-
+ul {
+  list-style-type: none;
+}
