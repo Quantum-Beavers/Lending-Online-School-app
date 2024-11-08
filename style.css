@@ -1,8 +1,89 @@
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: Rubik;
+  src: url(fonts/Rubik-Regular.ttf);
+}
+
+@font-face {
+  font-family: Rubik;
+  font-weight: bold;
+  src: url(fonts/Rubik-Bold.ttf);
+}
+
+body {
+  font-size: 20px;
+  font-family: Rubik, sans-serif;
+  background-color: var(--color-bg);
+}
+
+
 
 :root {
   --color-text: #ffffff;
-  --color-bg: rgb(18,18,18);
+  --color-bg-header: #1f1f1f;
+  --color-text: #00ef00;
+  --color-headerlink: #fff;
+  --color-headerlink-socials: #090;
+  --color-headerlink-hover: #00ef00;
 }
+
+
+/* header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1rem;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  color: var(--color-text);
+  background-color: var(--color-bg-header);
+  box-shadow: 0 0 0.5rem black;
+}
+
+header > .brand {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  font-size: x-large;
+  font-weight: bold;
+  color: var(--color-text);
+}
+
+header .items-wrapper,
+header .items {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+header .items a {
+  transition: all 250ms;
+  color: var(--color-headerlink);
+}
+
+header .items a:hover {
+  transition: all 250ms;
+  color: var(--color-headerlink-hover);
+}
+
+header .items.headerlinks a {
+  font-size: large;
+}
+
+header .items.socials a {
+  /* TODO: may be use later */
+  /* color: var(--color-headerlink-socials); */
+  font-size: x-large;
+}
+
+/* footer */
 footer{
   display: flex;
   flex-direction: row;
@@ -15,3 +96,4 @@ footer{
 .copyright{
   align-self: self-end;
 }
+
