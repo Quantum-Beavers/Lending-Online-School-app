@@ -17,8 +17,10 @@ html {
 body {
   font-size: 20px;
   width: 100%;
+  left: 0%;
   font-family: Rubik, sans-serif;
-  background-color: var(--color-bg);
+  
+  background: url(images/background.png) repeat;
 }
 
 @media screen and (max-width: 1030px) {
@@ -141,6 +143,9 @@ nav .items.socials a {
 
 /* footer */
 footer{
+  position:absolute;
+  left: 0;
+  width: 100%;
   display: flex;
   flex-direction: row;
   background-color: var(--color-bg);
@@ -170,7 +175,7 @@ footer .items a {
   color: var(--color-navlink);
 }
 
-footer .items a:hover {
+footer a:hover {
   transition: all 250ms;
   color: var(--color-navlink-hover);
 }
