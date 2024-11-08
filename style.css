@@ -21,6 +21,12 @@ body {
   background-color: var(--color-bg);
 }
 
+@media screen and (max-width: 1030px) {
+  section {
+    margin: 2rem auto;
+    width: 90%;
+  }
+}
 
 
 :root {
@@ -46,19 +52,12 @@ header {
   top: 0;
   z-index: 10;
 
+  font-size: xx-large;
   color: var(--color-text-header);
   background-color: var(--color-bg-header);
   box-shadow: 0 0 0.5rem black;
 }
 
-header > .brand {
-  display: flex;
-  align-items: center;
-  gap: 1em;
-  font-size: x-large;
-  font-weight: bold;
-  color: var(--color-text);
-}
 
 header .items-wrapper,
 header .items {
@@ -85,6 +84,59 @@ header .items.socials a {
   /* TODO: may be use later */
   /* color: var(--color-headerlink-socials); */
   font-size: xx-large;
+}
+
+/* burger menu */
+.btn {
+  transition: all 125ms;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  width: max-content;
+  padding: 0.5rem;
+  border: 0.25rem solid var(--color-bg);
+  cursor: pointer;
+}
+
+.btn:active {
+  scale: 90%;
+}
+
+#header-toggle {
+  display: none;
+  font-size: x-large;
+  border: 0.25rem solid var(--color-bg-header);
+  background-color: var(--color-bg-header);
+  color: var(--color-text);
+}
+
+@media screen and (max-width: 1030px) {
+  #header-toggle {
+    display: inline;
+  }
+
+  header .items.headerlinks {
+    flex-direction: column;
+  }
+
+  header .items-wrapper {
+    transition: 250ms;
+    flex-direction: column;
+    position: fixed;
+    top: 5.5rem;
+    left: 1rem;
+    right: 1rem;
+    background-color: var(--color-bg-header);
+    box-shadow: 0 0 0.5rem black;
+    padding: 2rem;
+  }
+
+  header .items-wrapper.hidden {
+    translate: -100vw;
+    opacity: 0;
+  }
 }
 
 /* footer */
