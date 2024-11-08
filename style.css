@@ -1,0 +1,17 @@
+
+:root {
+  --color-text: #ffffff;
+  --color-bg: rgb(18,18,18);
+}
+footer{
+  display: flex;
+  flex-direction: row;
+  background-color: var(--color-bg);
+  color:var(--color-text);
+  justify-content: space-around;
+  align-items: stretch;
+} 
+
+.copyright{
+  align-self: self-end;
+}
