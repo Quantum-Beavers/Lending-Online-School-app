@@ -34,17 +34,16 @@ body {
 :root {
   --color-text: #ffffff;
   --color-bg: #0f0f0f;
-  --color-bg-header: #1f1f1f;
-  --color-text-header: #00ef00;
-  --color-headerlink: #fff;
-  --color-headerlink-socials: #090;
-  --color-headerlink-hover: #00ef00;
+  --color-bg-nav: #1f1f1f;
+  --color-text-nav: #00ef00;
+  --color-navlink: #fff;
+  --color-navlink-socials: #090;
+  --color-navlink-hover: #00ef00;
 }
 
 
-/* header */
-header {
-  
+/* nav */
+nav {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -56,36 +55,36 @@ header {
   z-index: 10;
 
   font-size: xx-large;
-  color: var(--color-text-header);
-  background-color: var(--color-bg-header);
+  color: var(--color-text-nav);
+  background-color: var(--color-bg-nav);
   box-shadow: 0 0 0.5rem black;
 }
 
 
-header .items-wrapper,
-header .items {
+nav .items-wrapper,
+nav .items {
   display: flex;
   align-items: center;
   gap: 5rem;
 }
 
-header .items a {
+nav .items a {
   transition: all 250ms;
-  color: var(--color-headerlink);
+  color: var(--color-navlink);
 }
 
-header .items a:hover {
+nav .items a:hover {
   transition: all 250ms;
-  color: var(--color-headerlink-hover);
+  color: var(--color-navlink-hover);
 }
 
-header .items.headerlinks a {
+nav .items.navlinks a {
   font-size: xx-large;
 }
 
-header .items.socials a {
+nav .items.socials a {
   /* TODO: may be use later */
-  /* color: var(--color-headerlink-socials); */
+  /* color: var(--color-navlink-socials); */
   font-size: xx-large;
 }
 
@@ -107,36 +106,36 @@ header .items.socials a {
   scale: 90%;
 }
 
-#header-toggle {
+#nav-toggle {
   display: none;
   font-size: x-large;
-  border: 0.25rem solid var(--color-bg-header);
-  background-color: var(--color-bg-header);
+  border: 0.25rem solid var(--color-bg-nav);
+  background-color: var(--color-bg-nav);
   color: var(--color-text);
 }
 
 @media screen and (max-width: 1030px) {
-  #header-toggle {
+  #nav-toggle {
     display: inline;
   }
 
-  header .items.headerlinks {
+  nav .items.navlinks {
     flex-direction: column;
   }
 
-  header .items-wrapper {
+  nav .items-wrapper {
     transition: 250ms;
     flex-direction: column;
     position: fixed;
     top: 5.5rem;
     left: 1rem;
     right: 1rem;
-    background-color: var(--color-bg-header);
+    background-color: var(--color-bg-nav);
     box-shadow: 0 0 0.5rem black;
     padding: 2rem;
   }
 
-  header .items-wrapper.hidden {
+  nav .items-wrapper.hidden {
     translate: -100vw;
     opacity: 0;
   }
@@ -173,12 +172,12 @@ footer .items a {
  
   
   font-size: 60px;
-  color: var(--color-headerlink);
+  color: var(--color-navlink);
 }
 
 footer a:hover {
   transition: all 250ms;
-  color: var(--color-headerlink-hover);
+  color: var(--color-navlink-hover);
 }
 
 footer .nav li{
