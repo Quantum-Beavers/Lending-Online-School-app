@@ -96,7 +96,6 @@ footer{
   justify-content: space-around;
   align-items: stretch;
   font-size: xx-large;
-  padding: 2rem;
   
 } 
 
@@ -113,6 +112,9 @@ ul {
 
 footer .items a {
   transition: all 250ms;
+ 
+  
+  font-size: 60px;
   color: var(--color-headerlink);
 }
 
@@ -120,9 +122,18 @@ footer .items a:hover {
   transition: all 250ms;
   color: var(--color-headerlink-hover);
 }
-footer .items.socials{
-  font-size: xx-large;
-}
+
 footer .nav li{
   padding: 1rem;
+}
+footer .contacts{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .contacts>ul{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap:2rem;
 }
