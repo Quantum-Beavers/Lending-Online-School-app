@@ -96,6 +96,8 @@ footer{
   justify-content: space-around;
   align-items: stretch;
   font-size: xx-large;
+  padding: 2rem;
+  
 } 
 
 footer span{
@@ -120,4 +122,7 @@ footer .items a:hover {
 }
 footer .items.socials{
   font-size: xx-large;
+}
+footer .nav li{
+  padding: 1rem;
 }
