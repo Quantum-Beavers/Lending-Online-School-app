@@ -25,7 +25,7 @@ body {
   --color-text: #ffffff;
   --color-bg: #0f0f0f;
   --color-bg-header: #1f1f1f;
-  --color-text: #00ef00;
+  --color-text-header: #00ef00;
   --color-headerlink: #fff;
   --color-headerlink-socials: #090;
   --color-headerlink-hover: #00ef00;
@@ -43,7 +43,7 @@ header {
   top: 0;
   z-index: 10;
 
-  color: var(--color-text);
+  color: var(--color-text-header);
   background-color: var(--color-bg-header);
   box-shadow: 0 0 0.5rem black;
 }
