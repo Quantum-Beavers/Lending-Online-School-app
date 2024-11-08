@@ -1,3 +1,4 @@
+
 html {
   scroll-behavior: smooth;
 }
@@ -15,6 +16,7 @@ html {
 
 body {
   font-size: 20px;
+  width: 100%;
   font-family: Rubik, sans-serif;
   background-color: var(--color-bg);
 }
@@ -152,9 +154,16 @@ footer{
   color:var(--color-text);
   justify-content: space-around;
   align-items: stretch;
+  font-size: xx-large;
 } 
+
+footer span{
+  color: rgb(3,223, 50  )
+}
 
 .copyright{
   align-self: self-end;
 }
-
+ul {
+  list-style-type: none;
+}
