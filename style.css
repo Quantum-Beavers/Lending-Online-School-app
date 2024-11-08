@@ -1,3 +1,7 @@
+body{
+  width: 100%;
+  background-color: var(--color-bg);
+}
 
 :root {
   --color-text: #ffffff;
@@ -10,7 +14,12 @@ footer{
   color:var(--color-text);
   justify-content: space-around;
   align-items: stretch;
+  font-size: xx-large;
 } 
+
+footer span{
+  color: rgb(3,223, 50  )
+}
 
 .copyright{
   align-self: self-end;
