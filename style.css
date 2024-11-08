@@ -39,6 +39,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  
   gap: 1rem;
   padding: 1rem;
   position: sticky;
@@ -77,13 +78,13 @@ header .items a:hover {
 }
 
 header .items.headerlinks a {
-  font-size: large;
+  font-size: xx-large;
 }
 
 header .items.socials a {
   /* TODO: may be use later */
   /* color: var(--color-headerlink-socials); */
-  font-size: x-large;
+  font-size: xx-large;
 }
 
 /* footer */
@@ -106,4 +107,17 @@ footer span{
 }
 ul {
   list-style-type: none;
+}
+
+footer .items a {
+  transition: all 250ms;
+  color: var(--color-headerlink);
+}
+
+footer .items a:hover {
+  transition: all 250ms;
+  color: var(--color-headerlink-hover);
+}
+footer .items.socials{
+  font-size: xx-large;
 }
